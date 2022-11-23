@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+    padding:2rem;
+    background-color:hsl(36, 100%, 99%);
+}
+.container {
+    display: block;   
+}
+.nav-logo {
+    padding:20px 0px;
+}
+ #logo {
+    width: 80%;
+}
+.nav-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.nav1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    right:0;
+    width: 80%;
+    height:100%;
+    background-color:hsl(36, 100%, 99%);
+}
+.nav1 ul {
+    margin-left: 1.5em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.5em;
+    font-size: 1.2rem;
+}
+.nav1 li {
+    margin-top: 1em;
+    display: flex;
+    opacity: 70%;
+}
+#open-menu {
+    display: block;
+    cursor:pointer;
+}
+#closed-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+}
+.img-1 > img[name="mobile"] {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.img-1 > img[name="desktop"] {
+    display: none;
+}
+
+.s1 {
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem
+}
+.info h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+.info p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+button {
+    background-color: hsl(5, 85%, 63%);
+    padding:10px 25px;
+    width: 50%;
+    color: white;
+    border-style: none;
+    margin-bottom: 3rem;
+}
+.s2 {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    padding: 2rem;
+    line-height: 1.7;
+    margin-bottom: 2rem; 
+}
+.s2 h2 {
+    font-size: 2.1rem;
+}
+.all-art h4 {
+    margin-top: 2em;
+}
+.all-art p {
+    margin-bottom: 2em;
+}
+.s2 h2 {
+    color: hsl(35, 77%, 62%);
+}
+.card {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 2rem;
+}
+.card-img {
+    width: 30%;
+
+    flex-basis: 30%;
+}
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 70%;
+} 
+@media (min-width:768px){
+     html {
+        overflow-x: hidden;
+    }
+    body {
+        padding: 20px;
+        overflow-x: hidden;
+    }
+    .header-1{
+        align-items: center;
+    }
+    #logo {
+        width:90%;
+    }
+    .nav-container {
+        display: flex;
+        align-items:flex-start;
+    }
+    .nav1 {
+        padding-top:10px;
+    }
+    #open-menu {
+        display: none;
+    }
+    .nav1 {
+        display:block;
+        position: relative;
+        width: fit-content;
+        top: 0;
+        z-index: 1;
+    }
+    .nav1 ul {
+        display: flex;
+        flex-direction: row;
+        gap:2.5em;
+        margin-top: 0;
+    }
+    .img-1 > img[name="mobile"] {
+        display: none;}
+        .img-1 > img[name="desktop"] {
+            max-width: 100%;
+            display: block;
+        }
+    .info {
+        display: flex;
+        flex-basis: 50%;
+        justify-content: center;
+    }
+    .info h1 {
+        flex-basis: 50%;
+        font-size: 4rem;
+        line-height: normal;
+        font-weight: 700;
+    }
+    .info-sub {
+        flex-basis: 50%;
+    }
+    .info-sub p {
+        line-height: 2.0em;
+        margin-bottom: 4.5rem;
+    }
+    .s3 {
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
+        margin-top: 40px;
+    }
+    .card-img {
+        width:40%;
+    } 
+} 
+ @media (min-width:768px){
+    .all-art{
+        display: flex; 
+        gap:2rem;
+    }
+    article {
+        flex-basis: 33.3%;
+    }
+   
+}
+@media (min-width:1024px) {
+    .main-wrapper {
+        display: flex;
+        gap:2rem;
+    }
+    .all-art {
+      display: flex;
+      flex-direction: column;
+    }
+} 
+   
+    
+    
